@@ -1,0 +1,167 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    background-color: #151515; /* Cor de fundo da página */
+    color: white; /* Cor do texto principal */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    gap: 40px;
+    min-height: 100vh; /* Garante que o conteúdo preencha a altura da tela */
+}
+
+/* Estiliza a tag header */
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+
+/* Estiliza a área principal */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    gap: 10px;
+    margin: 20px;
+}
+
+.resultados-pesquisa {
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    padding: 1.5rem;
+}
+
+.item-resultado {
+    background: #2e2e2e; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #fdfeff; /* Cor do texto */
+}
+
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #b0b8fe; /* Cor dos links */
+    transition: color 0.3s; /* Transição suave na cor */
+}
+
+.item-resultado a:hover {
+    color: #ffffff; /* Cor ao passar o mouse */
+}
+
+.grupo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.grupo > .imagem {
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.descricao-meta {
+    color: #999999; /* Cor mais clara para a descrição */
+    margin: 0.5rem 0;
+}
+
+/* Estiliza a seção de pesquisa no rodapé */
+.search-section {
+    width: 100%;
+    max-width: 970px;
+    display: flex; /* Usa Flexbox para layout */
+    gap: 10px;
+    padding: 1rem;
+}
+
+.search-section > input {
+    width: 100%; /* Largura dos inputs */
+    max-width: 70%;
+    border: none; /* Remove a borda padrão */
+    padding: 1rem;
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #1f1f1f;
+    color: white; /* Cor do texto */
+    font-size: 1rem;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+.search-section input::placeholder {
+    color: white; /* Cor do placeholder */
+}
+
+.search-section > input:focus {
+    outline: none; /* Remove o contorno ao focar */
+}
+
+.search-section > button {
+    width: 100%;
+    max-width: 30%;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: #050611;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s; /* Transição suave no hover */
+}
+
+.search-section > button:hover {
+    background-color: #202020; /* Cor ao passar o mouse */
+}
+
+
+/* Estiliza o rodapé */
+footer {
+    background-color: #151515; /* Cor de fundo da página */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 1rem 0;
+    position: fixed; /* Fixar o rodapé no fundo */
+    bottom: 0;
+    left: 0;
+    font-size: 1rem;
+}
+
+.footer-direct {
+    font-size: 14px;
+    width: 100%;
+    max-width: 970px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Links no rodapé */
+.footer-direct a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-direct a:hover {
+    color: #b0b8fe; /* Cor ao passar o mouse */
+}
